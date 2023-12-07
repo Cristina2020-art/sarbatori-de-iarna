@@ -1,0 +1,115 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: limegreen;
+}
+
+header,
+main,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: rgb(5, 55, 88);
+  color: darkgreen;
+  text-align: center;
+}
+
+main {
+  background-color: forestgreen;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1,
+h2 {
+  color: rgb(3, 53, 87);
+  margin-left: 50px;
+}
+
+#themeSwitcher {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: green;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#themeText {
+  margin-top: 10px;
+}
+
+body.christmas-theme {
+  background-color: #e74c3c;
+  color: chartreuse;
+}
+
+header.christmas-theme {
+  background-color: #c0392b;
+}
+
+main.christmas-theme {
+  background-color: #d98880;
+}
+
+h1,
+h2.christmas-theme {
+  color: #c0392b;
+}
+.paragraphs {
+  max-width: 500px; /* Setează lățimea maximă pentru paragrafe */
+  margin-left: 50px;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 50px; /* Poate fi ajustat după nevoie */
+}
